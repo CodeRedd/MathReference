@@ -13,6 +13,7 @@ namespace MathReference
       public MainPage()
       {
          this.InitializeComponent();
+         
       }
    }
 }
