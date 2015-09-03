@@ -6,6 +6,25 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
    <Grid >
-      <TextBlock Text="&#x00F7; x y z F q E B  &#x222B;"/>
+      <StackPanel Margin="5">
+         <ComboBox Header="Equation Category"
+                   HorizontalAlignment="Center"/>
+         <Rectangle Height="1"
+                    Margin="20"
+                    Fill="Gray"/>
+         <ListView ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                   ScrollViewer.VerticalScrollBarVisibility="Auto"
+                   ScrollViewer.IsScrollInertiaEnabled="False">
+            <ListViewItem>
+               <TextBlock Text="ListItem1" />
+            </ListViewItem>
+            <ListViewItem>
+               <TextBlock Text="ListItem2" />
+            </ListViewItem>
+            <ListViewItem>
+               <TextBlock Text="ListItem3" />
+            </ListViewItem>
+         </ListView>
+      </StackPanel>
    </Grid>
 </Page>
