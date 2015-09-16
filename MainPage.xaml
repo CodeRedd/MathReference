@@ -8,7 +8,8 @@
    <Grid >
       <StackPanel Margin="5">
          <ComboBox Header="Equation Category"
-                   HorizontalAlignment="Center"/>
+                   HorizontalAlignment="Center"
+                   ItemsSource="{Binding EquationCategories}"/>
          <Rectangle Height="1"
                     Margin="20"
                     Fill="Gray"/>
@@ -16,6 +17,11 @@
                    ScrollViewer.VerticalScrollBarVisibility="Auto"
                    ScrollViewer.IsScrollInertiaEnabled="False"
                    ItemsSource="{Binding EquationList}">
+            <ListView.ItemTemplate>
+               <DataTemplate>
+                  <local:EquationControl />
+               </DataTemplate>
+            </ListView.ItemTemplate>
          </ListView>
       </StackPanel>
    </Grid>

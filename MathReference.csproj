@@ -100,9 +100,13 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Datatypes\MathStrings.cs" />
+    <Compile Include="EquationControl.xaml.cs">
+      <DependentUpon>EquationControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Equation.cs" />
     <Compile Include="Model\Symbol.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\EquationManager.cs" />
@@ -131,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="EquationControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
