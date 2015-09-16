@@ -1,5 +1,5 @@
 ﻿using System.Collections.ObjectModel;
-
+using MathReference.Datatypes;
 
 namespace MathReference.Model
 {
@@ -7,6 +7,7 @@ namespace MathReference.Model
    {
       public Superscript( ObservableCollection<Symbol> content )
       {
+         Type = SymbolType.SUPERSCRIPT;
          Contents = content;
       }
 

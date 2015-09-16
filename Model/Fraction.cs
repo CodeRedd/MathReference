@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using MathReference.Datatypes;
 
 namespace MathReference.Model
 {
@@ -6,6 +7,7 @@ namespace MathReference.Model
    {
       public Fraction( ObservableCollection<Symbol> num, ObservableCollection<Symbol> den )
       {
+         Type = SymbolType.FRACTION;
          Numerator = num;
          Denominator = num;
       }
