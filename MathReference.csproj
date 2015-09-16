@@ -107,6 +107,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Equation.cs" />
+    <Compile Include="Model\Fraction.cs" />
+    <Compile Include="Model\Subscript.cs" />
+    <Compile Include="Model\Superscript.cs" />
     <Compile Include="Model\Symbol.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\EquationManager.cs" />

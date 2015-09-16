@@ -7,14 +7,11 @@
 
       }
 
-      public Symbol( string characterCode )
+      public Symbol( string text )
       {
-         CharacterCode = characterCode;
+         DisplayText = text;
       }
-      #region Properties
 
-      public string CharacterCode { get; set; }
-
-      #endregion
+      public string DisplayText { get; set; }
    }
 }
