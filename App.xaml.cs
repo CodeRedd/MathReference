@@ -1,5 +1,4 @@
-﻿using MathReference.ViewModel;
-using System;
+﻿using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -61,7 +60,6 @@ namespace MathReference
             rootFrame.Navigate( typeof( MainPage ), e.Arguments );
          }
          // Ensure the current window is active
-         rootFrame.DataContext = new EquationManager();
          Window.Current.Activate();
       }
 
