@@ -9,7 +9,8 @@
       <StackPanel Margin="5">
          <ComboBox Header="Equation Category"
                    HorizontalAlignment="Center"
-                   ItemsSource="{Binding EquationCategories}"/>
+                   ItemsSource="{Binding CategoryList}"
+                   SelectedIndex="{Binding SelectedCategory, Mode=TwoWay}"/>
          <Rectangle Height="1"
                     Margin="20"
                     Fill="Gray"/>
