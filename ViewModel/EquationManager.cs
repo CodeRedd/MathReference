@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using MathReference.Datatypes;
 using MathReference.Model;
+
 
 namespace MathReference.ViewModel
 {
@@ -44,7 +47,14 @@ namespace MathReference.ViewModel
       //conversion between cartesian and cylindrical
       private void addCylindricalCoordinateConversions()
       {
-
+         ObservableCollection<Symbol> temp = new ObservableCollection<Symbol>();
+         temp.Add( new Symbol( MathStrings.INTEGRAL + " " ) );
+         temp.Add( new Fraction( new ObservableCollection<Symbol>() { new Symbol( "x" ) }, new ObservableCollection<Symbol>() { new Symbol( "2" ) } ) );
+         temp.Add( new Symbol( "y" ) );
+         temp.Add( new Superscript( new ObservableCollection<Symbol>() { new Symbol( "3" ) } ) );
+         temp.Add( new Symbol( MathStrings.EPSILON + " " ) );
+         temp.Add( new Subscript( new ObservableCollection<Symbol>() { new Symbol( "0" ) } ) );
+         EquationList.Add( new Equation( temp, new List<string>() { "Cylindrical Coordinates" } ) );
       }
 
       //conversion between cartesian and spherical
