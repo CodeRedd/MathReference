@@ -8,8 +8,9 @@ namespace MathReference.Model
    {
       private List<string> ParentCategories { get; set; }
 
-      public Equation( ObservableCollection<Symbol> equationSymbols, List<string> categories )
+      public Equation( string equationTitle, ObservableCollection<Symbol> equationSymbols, List<string> categories )
       {
+         Title = equationTitle;
          DisplaySymbols = equationSymbols;
          ParentCategories = categories;
       }

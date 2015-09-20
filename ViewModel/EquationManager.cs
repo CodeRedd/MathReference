@@ -54,7 +54,9 @@ namespace MathReference.ViewModel
          temp.Add( new Superscript( new ObservableCollection<Symbol>() { new Symbol( "3" ) } ) );
          temp.Add( new Symbol( MathStrings.EPSILON + " " ) );
          temp.Add( new Subscript( new ObservableCollection<Symbol>() { new Symbol( "0" ) } ) );
-         EquationList.Add( new Equation( temp, new List<string>() { "Cylindrical Coordinates" } ) );
+         EquationList.Add( new Equation( "Test Equation",
+                                         temp,
+                                         new List<string>() { "Cylindrical Coordinates" } ) );
       }
 
       //conversion between cartesian and spherical
