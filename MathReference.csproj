@@ -99,6 +99,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Triggers\IsSymbolTypeTrigger.cs" />
     <Compile Include="Datatypes\MathStrings.cs" />
     <Compile Include="Datatypes\SymbolType.cs" />
     <Compile Include="EquationControl.xaml.cs">
